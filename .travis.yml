@@ -8,7 +8,7 @@ before_install:
 script:
   - docker run -e CI=true fdesobry/frontend npm run test
 deploy:
-  provider: elasticbeantalk
+  provider: elasticbeanstalk
   region: "us-east-1" 
   app: "react-container"
   env: "ReactContainer-env" 
